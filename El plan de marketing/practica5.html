@@ -1,0 +1,383 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white.css">
+    </head>
+
+     <div class="reveal">
+            <div class="slides">
+
+
+            	<section id="inicio" data-background-color="#DCDCDC">
+		<h1><font color="#8B0000">Tecnologías Web</font></h1>
+		<hr>
+		<h2><font color="#696969">Presentación realiza por:</font> <font color="black">Patricia Garrido</font></h2>
+		<hr>
+		<h3> <font color="#8B0000">MLD - PMED</font></h3>
+
+		<a href="https://www.ucm.es/master-letrasdigitales/presentacion">
+		<img src="master.png" width="30%" alt="máster" text-align="center">
+	</a>
+		</section>
+
+              
+
+            	<section  data-transition="fade" data-background-color="#F0E68C">
+                      <h2> Tecnologías web (TW) </h2>
+
+                      <p >Esta asignatura es una asignatura del MLD con las siguientes características</p>
+
+                      <ul>
+                      	<li class="fragment shrink"> Su profesora fue <a href="https://www.ucm.es/directorio?id=7387">Eva Ullán </a></li>
+                      	<li class="fragment shrink"> Es una asignatura de Desarrollo Web </li>
+                      	<li class="fragment shrink"> En esta asignatura se imparten las siguientes asignaturas</li>
+                      		<ul>
+                      			<li>HTML</li>
+                      			<li>CSS</li>
+                      			<li>Bootstrap</li>
+                      		</ul>
+                      	</li>
+                      </ul>
+                  </section>
+              
+
+
+
+            <section>  
+            <section id="arquitectura" data-transition="fade" data-background-image="servidor.jpeg" data-background-size="1000px"> <h3><font color="#8B0000"> Arquitectura cliente-servidor</font></h3> </section>
+
+            <section data-background-color="#DCDCDC">
+				
+				<h2 class="fragment grow-up"> Modelo de funcionamiento básico <b>El cliente</b></h2>
+
+				<ul>
+					<li>El cliente puede ser un proceso ejecutándose en un dispositivo cualquiera</li>
+					<li>El servidor puede ser un proceso ejecutándose en un equipo (normalmente de altas prestaciones)</li>
+				</ul>
+
+				<img src="servidor-cliente.png" width="30%" alt="servidor-cliente">
+
+			</section>
+
+				 <section data-background-color="#DCDCDC">
+				
+				<p class="fragment highlight-current-red">El cliente realiza una petición a un servidor:</p>
+				<ol>
+					<li class="fragment highlight-current-red"> Origina el tráfico web vía Internet usando un protocolo (generalmente <b>HTTP</b>y suele hacerse mediante un navegador</li>
+					<li class="fragment highlight-current-red"> Si el servidor es capaz de responder a dicha petición entonces enviará una <b>respuesta</b> con el recurso o archivo que, generalmente, el cliente es capaz de mostrar.</li>
+
+
+					 
+                </section>
+
+                
+
+            
+
+<section data-markdown>
+             <script type="text/template">
+             <!-- .slide: data-background="#8B0000" -->
+             ## Modelo de funcionamiento básico. El servidor:
+                * El servidor es un ordenador configurado para poder recibir peticiones generalmente HTTP y responder a ellas enviando archivos a través de Internet. <!-- .element: class="fragment" data-fragment-index="1" -->
+                   - Al principio, el servidor siempre respondía enviando un archivo. <!-- .element: class="fragment" data-fragment-index="2" -->
+                   - Pero los servidores pueden crear dinámicamente el documento justo en el momento en el que reciben la petición. <!-- .element: class="fragment" data-fragment-index="3" -->
+  
+           
+                     
+                    </script>
+                  </section>
+
+<section data-markdown>
+             <script type="text/template">
+             <!-- .slide: data-background="#8B0000" -->
+
+ ###### La respuesta del servidor puede ser de dos tipos:
+ * Estática: un archivo que está almacenado a priori en el servidor. <!-- .element: class="fragment" data-fragment-index="2" -->
+ * Dinámica: consiste en crear dinámicamente un documento, a partir de información extra que se pasa al servidor al hacerle la petición y devolverle dicho archivo creado ad hoc. <!-- .element: class="fragment" data-fragment-index="3" -->
+ * Ejemplos: Facebook, un blog, una búsqueda en Google, etc. <!-- .element: class="fragment" data-fragment-index="4" -->
+                  
+                     
+
+                             </script>
+                  </section>
+
+
+
+<section data-background-video="fondo.mp4"> 
+	<font color="white">
+	<h2 class="fragment grow-up"> <font color="white">Respuesta dinámica(I) </font></h2>
+	<p> ¿Qué pasa cuando abres tu muro de facebook? </p>
+
+	<ul>
+		<li>El navegador <b>envía una petición</b> a los servidores de facebook: <q>Enséñame el muro de esta persona</q></li>
+		<li> Cuando el servidor recibe esta petición <b>activa sus bases de datos</b> para ver quiénes son tus amigos, qué contenido han publicado recientemente, qué comentarios han recibido, etc.</li>
+	</ul>
+</font>
+
+</section>
+
+
+<section data-background-video="fondo.mp4">
+
+	<h2 class="fragment grow-up"> <font color="white">Respuesta dinámica (II) </font></h2>
+<font color="white">
+	<ul>
+	<li>A continuación, <b>decide</b> qué contenidos son más relevantes, los prioriza y <b>construye</b> una página web para poder enviársela a tu navegador y que te la demuestre.</li>
+	<li>Y todo esto lo hace en unos pocos milisegundos; <b>la página tarda menos en construirse que en llegar a tu navegador</b>.</li>
+</ul>
+</font>
+	</section>
+
+                 </section>
+
+
+<section>
+  <section  data-transition="slide" data-background-image="url1.jpg">
+
+
+
+  	<h1><font color="red">URLs</font></h1></section>
+   <section data-background-iframe="http://4.bp.blogspot.com/-Of-nH1BWZeE/UC8--UEEAFI/AAAAAAAADi4/gVXsxJNSm5c/s1600/fondo+13.jpg">
+
+
+<h2> URL </h2>
+<h4 class="fragment fade-up"> Uniform Resource Locator </h4>
+<ol class="fragment fade-up">
+   <li> Es un identificador único que describe el servidor y el recurso de este al que el cliente quiere acceder.</li>
+   <li> Posee una estructura:  </li>
+</ol>
+
+<img class="fragment fade-up" src="url.jpg" width="30%" alt="url" text-align="center"> 
+     
+
+
+</section>
+
+<section  data-transition="fade-in slide-out" data-markdown>
+             <script type="text/template">
+             <!-- .slide: data-background="lightblue" -->
+             * Protocolo: lenguaje en el que se van a comunicar cliente y servidor 
+             * Dominio: nombre del servidor (Dirección IP obtenida a partir de los servidores DNS) <!-- .element: class="fragment" data-fragment-index="2" -->
+             * Puerto: canal de comunicación con el servidor <!-- .element: class="fragment" data-fragment-index="3" -->
+             * Ruta: ruta y nombre del recurso al que queremos acceder <!-- .element: class="fragment" data-fragment-index="4" -->
+             * Datos adicionales: parámetros para el servidor <!-- .element: class="fragment" data-fragment-index="5" -->
+
+
+        </script>
+       </section>
+
+     </section>
+    </section>
+
+
+<section>
+<section data-background-color="#DCDCDC">
+<h1>HTTP y HTML</h1>
+<video data-autoplay width="600" src="html.mp4"></video>
+</section> 
+
+<section data-background-color="green">
+	<h2 class="fragment highlight-green">HTTP</h2>
+	<h5 class="fragment highlight-green">Hypertext Transform Protocol</h5>
+
+	<ul>
+		<li>Es el protocolo más usado habitualmente para intercambiar información entre cliente y servidor, con el fin de comunicarse</li>
+		<li> 
+
+			No es el único que existe: HTTPS, SMTP, FTP, SSH... </li>
+	</ul>
+</section>
+<section data-background-color="green">
+
+	<h2 class="fragment highlight-green">HTML</h2>
+	<h5 class="fragment highlight-green">HyperText Markup Language</h5>
+	<ul>
+		<li> Respuesta más comúnmente intercambiada entre navegadores y servidores web </li> 
+		<li> a forma de la información es un archivo que contiene: 
+			<ul>
+				<li>Texto: la información real del documento</li>
+				<li>Marcas: elementos que sirven para que el navegador interprete cómo mostrar el documento</li>
+				<li>Enlaces o referencias a otros documentos: estos enlaces nos pueden conducir a otros documentos</li>
+			</ul>
+		</li>
+	</ul>
+
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+	<!-- .slide: data-background-iframe="http://www.v3wall.com/wallpaper/1440_900/1211/1440_900_201211031224001143488.jpg"-->
+
+	## Versiones HTML
+
+| Años       | Versiones  |
+| ---------- | -----------|
+| 1995       | HTML 2.0   |
+| 1996       | HTML 3.2   |
+| 1997       | HTML 4.0   |
+| 2010       | HTML 5.0   |
+
+	</script>
+</section>
+
+</section>
+
+<section>
+<section data-background-image="html2.jpg">
+	<h2 class="fragment grow"><font color="red"> Comunicación HTTP en detalle </font> </h2>
+
+	<hr>
+	<br>
+	<br>
+	<br>
+
+	<a href="#/arquitectura">Repasar contenidos de la Arquitectura C-S</a>
+
+
+</section>
+
+<section data-transition-speed="slow" data-markdown>
+             <script type="text/template">
+              <!-- .slide: data-background="#7FFFD4" -->
+
+* **HTTP** es un protocolo de tipo **petición/respuesta sin estado**
+
+    1.  Una aplicación ejecutada por un cliente (habitualmente un navegadir web) inicia una conexión al servidor <!-- .element: class="fragment" data-fragment-index="1" -->
+    2.  El servidor la acepta y el cliente envía la petición HTTP codificada en código ASCII <!-- .element: class="fragment" data-fragment-index="2" -->
+    3.  El servidor analiza la petición y localiza el recurso <!-- .element: class="fragment" data-fragment-index="3" -->
+    4.  El servidor envía una respuesta, que incluye una copia del recurso, a través de la conexión <!-- .element: class="fragment" data-fragment-index="4" -->
+    5.  El servidor cierra la conexión <!-- .element: class="fragment" data-fragment-index="5" -->
+    
+             </script>
+            </section>
+
+<section data-background-color="#7FFFD4">
+
+
+<h4 class="highlight=pink" >Partes de una petición HTTP</h4>
+
+<h5>Método</h5>
+
+<ol>
+	<li> Una petición HTTP empieza con un método qué indica qué quiere el cliente que haga el servidor</li>
+    <li> Los dos métodos más comunes son</li>
+  </ol>
+
+  <a href="https://es.wikipedia.org/wiki/HTML">
+
+  <img class="fragment fade-up" src="html.jpg" alt="html" width="30%" text-align="center"> </a>
+
+
+
+
+
+    
+   </section>
+
+
+<section data-markdown>
+             <script type="text/template">
+             <!-- .slide: data-background="#7FFFD4" -->
+
+
+#### Tipos de método
+
+Método| Descripción
+-- | --
+GET| Solicitud de datos al servidor
+POST | Envío de datos al servidor
+
+
+</script>
+</section>
+
+<section data-background-color="#7FFFD4">
+	<h5 class="fragment highlight-blue"> Recurso</h5>
+	<p> Es el nombre del recurso al que se le pide acceso </p>
+
+	<h5 class="fragment highlight-blue"> Versión de HTTP </h5>
+	<p> Es la versión de HTTP utilizada </p>
+
+	<h5 class="fragment highlight-blue"> Cabeceras o encabezados </h5>
+	<p> Información adicional para ayudar al servidor a interpretar la petición </p>
+</section>
+
+<section data-background-color="#7FFFD4">
+	<h4 class="fragment highlight-blue"> Respuestas de una petición HTTP </h4>
+
+
+	<ul>
+		<li >Cuando un servidor recibe una solicitud HTTP responde con un mensaje de texto <i>ASCII</i> 
+			que tiene que estar correctamente formado</li>
+		<li>Códigos de texto y texto asociado:
+			<ul>
+				<li>Un número y un texto indicando la respuesta del servidor</li>
+				<li>lgunos códigos de estado o significado son</li>
+			</ul>
+		</li>
+	</ul>
+</section>
+
+<section data-background-color="#7FFFD4">
+
+	<p class="fragment fade-up fragment highlight-blue">Algunos códigos de estado o significado son: </p>
+	<ul>
+		<li>200 0k: La solicitud se ha satisfecho con éxito</li>
+        <li>404 Not found: El servidor no puedo encontrar nada que encajara con la petición</li>
+        <li>301 Moved Permantly: Los datos solicitados se han trasladado de forma permanente</li>
+        <li>302 Found: Los datos solicitados están en otra URL (redirección)</li>
+        <li>500 Internal Server Error: Un error del servidor ha impedido satisfacer la solicitud</li>
+     </ul>
+ </section>
+</section>
+
+<section>
+<section data-transition="zoom" data-background-image="referencias.jpg">
+	<h2 class="grow">Referencias</h2>
+</section>
+
+<section data-background-color="#8B008B">
+
+	<h4>Campus virtual. Asignatura <b>TW</b> (Tecnologías Web) impartida por Eva Ullán</h4>
+
+		<a href="#/inicio"> Volver al inicio de la presentación </a>
+
+<a href="https://www.ucm.es/master-letrasdigitales/presentacion">
+		<img src="master.png" width="50%" alt="máster" text-align="center">
+	</a>
+
+
+
+
+ 
+
+</section>
+</section>
+
+
+
+
+            </div>
+     </div>
+
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            Reveal.initialize({
+
+            	slideNumber: true,
+            	autoSlide: 2000,
+            	transition: 'zoom',
+              dependencies: [
+		// Para interpretar Markdown en los elementos <section>
+                { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } }
+              ]
+            });
+        </script>
+
+
+
+       
